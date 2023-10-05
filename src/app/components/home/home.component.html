@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="toolbar">
+        <span>SOSecurity</span>
+    </div>
+    <div class="content">
+        <div class="location">
+            <div class="ubicacion">Tu ubicación actual</div>
+            <div class="addres">{{ userLocation ? userAddress : 'Obteniendo ubicación...' }}</div>
+        </div>
+        <div class="map-container">
+            <div id="map" style="height: calc(50vh)"></div>
+        </div>
+    </div>
+    <div class="bottom-toolbar">
+        <button class="pi pi-home" style="margin-left: 5px" (click)="navigateToHome()"></button>
+        <button class="custom-button" style="margin-left: 20px" (click)="sendSOSMessage()">SOS</button>
+        <button class="pi pi-users" style="margin-left:20px" (click)="navigateTocontact()"></button>
+        <button class="pi pi-cog" style="margin-left:20px"></button>
+    </div>
+</div>

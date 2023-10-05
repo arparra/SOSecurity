@@ -1,0 +1,25 @@
+<div class="container">
+  <h2 class="toolbar">Detalles de Contacto</h2>
+  <ul>
+    <li *ngFor="let contact of contactList" class="contact-item">
+      <div class="contact-info">
+        <span class="texto">{{ contact.name.formatted }}</span>
+        <span class="numero">{{ contact.phoneNumbers[0]?.value }}</span>
+      </div>
+      <button class="pi pi-trash delete-button-small" (click)="deleteContact(contact)">
+      </button>
+    </li>
+  </ul>
+
+  <div class="bottom-toolbar">
+    <button class="pi pi-home" style="margin-left: 5px" (click)="navigateToHome()"></button>
+    <button class="custom-button" style="margin-left: 20px" (click)="sendSOSMessage()">SOS</button>
+    <button class="pi pi-users" style="margin-left:20px" (click)="navigateTocontact()"></button>
+    <button class="pi pi-cog" style="margin-left:20px"></button>
+  </div>
+
+  <div class="bottom-center-button">
+    <button class="pi pi-plus" (click)="selectContact()">
+    </button>
+  </div>
+</div>

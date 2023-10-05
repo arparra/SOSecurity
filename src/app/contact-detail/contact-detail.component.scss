@@ -1,0 +1,110 @@
+.container {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.toolbar {
+  background-color: rgb(214, 17, 17);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.texto {
+  color: rgb(173, 170, 255);
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.numero {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.delete-button-small {
+  font-size: 20px !important;
+  width: 30px !important;
+  height: 30px !important;
+  background: red !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 10px !important;
+  margin-right: 20px !important;
+}
+
+.bottom-toolbar {
+  background: rgb(214, 17, 17);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+}
+.pi {
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  background: red;
+  border-radius: 50%;
+}
+
+.custom-button {
+  width: 70px;
+  height: 70px;
+  background: red;
+  border-radius: 50%;
+  color: white;
+  font-size: 26px;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.bottom-center-button {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.round-button {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

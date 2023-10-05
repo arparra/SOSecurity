@@ -1,0 +1,70 @@
+.container {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.toolbar {
+  background-color: rgb(214, 17, 17);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.map-container {
+  width: 100%;
+  position: absolute;
+  top: 167px;
+}
+
+.ubicacion {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 55px;
+}
+
+.addres {
+  color: rgb(66, 66, 229);
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.bottom-toolbar {
+  background: rgb(214, 17, 17);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+
+.pi {
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  background: red;
+  border-radius: 50%;
+}
+.custom-button {
+  width: 70px;
+  height: 70px;
+  background: red;
+  border-radius: 50%;
+  color: white;
+  font-size: 26px;
+}
